@@ -1,0 +1,70 @@
+:root {
+  --dark: #1d1a05;
+  --light: #faf9f9;
+  --secondary: #51a3a3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.button-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  width: 350px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.light-theme .button {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark-theme .button {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.button:hover {
+  background-color: var(--secondary);
+}
+
+.light-theme .background {
+  background-color: var(--light);
+}
+
+.dark-theme .background {
+  background-color: var(--dark);
+}
+
+.timestamp {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.light-theme .timestamp {
+  color: var(--dark);
+}
+
+.dark-theme .timestamp {
+  color: var(--light);
+}
+
+.hidden {
+  visibility: hidden;
+}
